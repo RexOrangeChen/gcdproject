@@ -39,5 +39,6 @@ run_analysis <- function(){
         mydata1 <- summarize(all_sub_group, mean(all_sub_group[[i]]))
         mydata <- merge(mydata, mydata1, by =c("subject", "labels"),all = TRUE)
     }
-    write.table(mydata,"output.txt",row.name=FALSE)
+    write.table(mydata,"output2.txt",row.name=FALSE)
+    write.table(all,"output1.txt",row.name=FALSE)
 }
